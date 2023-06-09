@@ -10,9 +10,13 @@
 <body>
   <?php
     //putenv("HOST=lol");
-    $host = $BASE_URL = getenv("HOST") == FALSE ? "/" : getenv("HOST");
+    $host = getenv("HOST");
+    $apikey = getenv("APIKEY");
+    $state = getenv("STATE");
     var_dump($host);
-    echo '<br>hello world!!!';
+    var_dump($apikey);
+    var_dump($state);
+
   ?>
 </body>
 </html>
