@@ -9,9 +9,10 @@
 </head>
 <body>
   <?php
-    $host = getenv("HOST");
-    echo $host.'<br>';   
-    echo 'hello world!!!';
+    //putenv("HOST=lol");
+    $host = $BASE_URL = getenv("HOST") == FALSE ? "/" : getenv("HOST");
+    var_dump($host);
+    echo '<br>hello world!!!';
   ?>
 </body>
 </html>
